@@ -1,0 +1,140 @@
+[gd_scene load_steps=10 format=3 uid="uid://ch6cns75wwv5o"]
+
+[ext_resource type="Texture2D" uid="uid://bpfmo78gb72xf" path="res://assets/Rectangle 14.png" id="1_cvc75"]
+[ext_resource type="FontFile" uid="uid://07fkf7jv26k0" path="res://assets/fonts/InriaSans-Regular.ttf" id="2_lqdwf"]
+[ext_resource type="StyleBox" uid="uid://di2jcii5db1dn" path="res://assets/buttons/next_button.tres" id="3_gulsl"]
+[ext_resource type="StyleBox" uid="uid://de3mti8838fxf" path="res://assets/buttons/sound_button.tres" id="4_coj7e"]
+[ext_resource type="Script" uid="uid://cjq4h336irill" path="res://cenas/next_button6.gd" id="4_lqdwf"]
+[ext_resource type="StyleBox" uid="uid://2wem8hydwdrr" path="res://assets/buttons/back_button.tres" id="5_pttr7"]
+[ext_resource type="Script" uid="uid://dajfltdqvddyw" path="res://cenas/mute_button_page2.gd" id="6_pttr7"]
+[ext_resource type="Script" uid="uid://c4ggohyxy4adk" path="res://cenas/back_button5.gd" id="7_gulsl"]
+[ext_resource type="AudioStream" uid="uid://bl2ilcqg7w0of" path="res://assets/audios/audio_page6.wav" id="8_coj7e"]
+
+[node name="Page6" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_cvc75")
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 25.0
+offset_top = 46.0
+offset_right = 754.0
+offset_bottom = 245.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="ColorRect2"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 4.0
+offset_right = 633.0
+offset_bottom = 93.0
+theme_override_fonts/font = ExtResource("2_lqdwf")
+theme_override_font_sizes/font_size = 16
+text = "Ao longo da história, o trabalho passou por profundas transformações. Na Pré-História, ele era coletivo e 
+focado na sobrevivência, como caça, pesca e coleta. Na Antiguidade, surgem a agricultura, a divisão social 
+do trabalho e a escravidão como base econômica. Durante a Idade Média, o sistema feudal se estabelece, 
+marcado pelo trabalho servil, no qual camponeses produziam na terra em troca de proteção. Na Idade 
+Moderna, o capitalismo e o trabalho assalariado ganham força, acompanhados pela mecanização e 
+urbanização do trabalho. Já na Contemporaneidade, aparecem legislações trabalhistas, organizações de 
+proteção aos trabalhadores, além do crescimento do trabalho intelectual e da distinção entre trabalho 
+físico e mental."
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+offset_left = 241.0
+offset_top = 7.0
+offset_right = 521.0
+offset_bottom = 38.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="ColorRect3"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 3.0
+offset_right = 190.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("2_lqdwf")
+theme_override_font_sizes/font_size = 16
+text = "Linha do tempo da história do trabalho"
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+offset_left = 248.0
+offset_top = 807.0
+offset_right = 518.0
+offset_bottom = 881.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="ColorRect4"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 6.0
+offset_right = 240.0
+offset_bottom = 49.0
+theme_override_fonts/font = ExtResource("2_lqdwf")
+theme_override_font_sizes/font_size = 16
+text = "Arraste o dedo na tela para conseguir 
+enxergar a linha do tempo de forma 
+cronológica dos trabalhadores. "
+
+[node name="NextButton" type="Button" parent="."]
+offset_left = 529.0
+offset_top = 929.0
+offset_right = 752.18005
+offset_bottom = 1008.99
+theme_override_styles/normal = ExtResource("3_gulsl")
+theme_override_styles/normal_mirrored = ExtResource("3_gulsl")
+theme_override_styles/pressed = ExtResource("3_gulsl")
+theme_override_styles/pressed_mirrored = ExtResource("3_gulsl")
+theme_override_styles/hover = ExtResource("3_gulsl")
+theme_override_styles/hover_mirrored = ExtResource("3_gulsl")
+theme_override_styles/hover_pressed = ExtResource("3_gulsl")
+theme_override_styles/hover_pressed_mirrored = ExtResource("3_gulsl")
+theme_override_styles/disabled = ExtResource("3_gulsl")
+theme_override_styles/disabled_mirrored = ExtResource("3_gulsl")
+theme_override_styles/focus = ExtResource("3_gulsl")
+script = ExtResource("4_lqdwf")
+
+[node name="SoundButton" type="Button" parent="."]
+offset_left = 315.0
+offset_top = 879.0
+offset_right = 482.88
+offset_bottom = 1046.88
+theme_override_styles/normal = ExtResource("4_coj7e")
+theme_override_styles/normal_mirrored = ExtResource("4_coj7e")
+theme_override_styles/pressed = ExtResource("4_coj7e")
+theme_override_styles/pressed_mirrored = ExtResource("4_coj7e")
+theme_override_styles/hover = ExtResource("4_coj7e")
+theme_override_styles/hover_mirrored = ExtResource("4_coj7e")
+theme_override_styles/hover_pressed = ExtResource("4_coj7e")
+theme_override_styles/hover_pressed_mirrored = ExtResource("4_coj7e")
+theme_override_styles/disabled = ExtResource("4_coj7e")
+theme_override_styles/disabled_mirrored = ExtResource("4_coj7e")
+theme_override_styles/focus = ExtResource("4_coj7e")
+script = ExtResource("6_pttr7")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="SoundButton"]
+position = Vector2(-315, -879)
+stream = ExtResource("8_coj7e")
+
+[node name="BackButton" type="Button" parent="."]
+offset_left = 33.0
+offset_top = 910.0
+offset_right = 258.0
+offset_bottom = 1002.0
+theme_override_styles/normal = ExtResource("5_pttr7")
+theme_override_styles/normal_mirrored = ExtResource("5_pttr7")
+theme_override_styles/pressed = ExtResource("5_pttr7")
+theme_override_styles/pressed_mirrored = ExtResource("5_pttr7")
+theme_override_styles/hover = ExtResource("5_pttr7")
+theme_override_styles/hover_mirrored = ExtResource("5_pttr7")
+theme_override_styles/hover_pressed = ExtResource("5_pttr7")
+theme_override_styles/hover_pressed_mirrored = ExtResource("5_pttr7")
+theme_override_styles/disabled = ExtResource("5_pttr7")
+theme_override_styles/disabled_mirrored = ExtResource("5_pttr7")
+theme_override_styles/focus = ExtResource("5_pttr7")
+script = ExtResource("7_gulsl")
+
+[connection signal="pressed" from="NextButton" to="NextButton" method="_on_pressed"]
+[connection signal="pressed" from="SoundButton" to="SoundButton" method="_on_pressed"]
+[connection signal="pressed" from="BackButton" to="BackButton" method="_on_pressed"]

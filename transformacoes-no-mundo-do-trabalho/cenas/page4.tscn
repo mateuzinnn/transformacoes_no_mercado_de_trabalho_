@@ -1,0 +1,135 @@
+[gd_scene load_steps=10 format=3 uid="uid://db0155hx1yrkq"]
+
+[ext_resource type="Texture2D" uid="uid://bfh3okp1vnucq" path="res://assets/Gemini_Generated_Image_h88tp5h88tp5h88t 1.png" id="1_ucg71"]
+[ext_resource type="FontFile" uid="uid://07fkf7jv26k0" path="res://assets/fonts/InriaSans-Regular.ttf" id="2_a7rjj"]
+[ext_resource type="StyleBox" uid="uid://di2jcii5db1dn" path="res://assets/buttons/next_button.tres" id="3_234u0"]
+[ext_resource type="Script" uid="uid://dutuacua7t2b0" path="res://cenas/next_button4.gd" id="4_a7rjj"]
+[ext_resource type="StyleBox" uid="uid://de3mti8838fxf" path="res://assets/buttons/sound_button.tres" id="4_lvy8p"]
+[ext_resource type="StyleBox" uid="uid://2wem8hydwdrr" path="res://assets/buttons/back_button.tres" id="5_j75wj"]
+[ext_resource type="Script" uid="uid://dajfltdqvddyw" path="res://cenas/mute_button_page2.gd" id="6_j75wj"]
+[ext_resource type="Script" uid="uid://j5dtjpphj325" path="res://cenas/back_button3.gd" id="7_234u0"]
+[ext_resource type="AudioStream" uid="uid://qawkx6ie6hwl" path="res://assets/audios/audio_page4.wav" id="8_lvy8p"]
+
+[node name="Page4" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 771.0
+offset_bottom = 1024.0
+texture = ExtResource("1_ucg71")
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 72.0
+offset_top = 60.0
+offset_right = 703.0
+offset_bottom = 157.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="ColorRect2"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 4.0
+offset_right = 633.0
+offset_bottom = 93.0
+theme_override_fonts/font = ExtResource("2_a7rjj")
+theme_override_font_sizes/font_size = 16
+text = "Trabalho intelectual: diferentemente do trabalho físico, o trabalho intelectual envolve, 
+principalmente, o uso da mente para a realização de atividades que demandam raciocínio, 
+análise, criatividade ou a tomada de decisões. Dessa forma, verifica-se que o trabalho 
+intelectual envolve atividades tais como a ciência, a educação, a gestão e as áreas criativas."
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+offset_left = 116.0
+offset_top = 468.0
+offset_right = 624.0
+offset_bottom = 542.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="ColorRect3"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 3.0
+offset_right = 500.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("2_a7rjj")
+theme_override_font_sizes/font_size = 16
+text = "Mova o seu tablet para os lados e ajude o cientista a misturar os líquidos
+e veja como é um exemplo de trabalho científico, que se encaixa como 
+trabalho intelectual."
+
+[node name="NextButton" type="Button" parent="."]
+offset_left = 529.0
+offset_top = 929.0
+offset_right = 752.18005
+offset_bottom = 1008.99
+theme_override_styles/normal = ExtResource("3_234u0")
+theme_override_styles/normal_mirrored = ExtResource("3_234u0")
+theme_override_styles/pressed = ExtResource("3_234u0")
+theme_override_styles/pressed_mirrored = ExtResource("3_234u0")
+theme_override_styles/hover = ExtResource("3_234u0")
+theme_override_styles/hover_mirrored = ExtResource("3_234u0")
+theme_override_styles/hover_pressed = ExtResource("3_234u0")
+theme_override_styles/hover_pressed_mirrored = ExtResource("3_234u0")
+theme_override_styles/disabled = ExtResource("3_234u0")
+theme_override_styles/disabled_mirrored = ExtResource("3_234u0")
+theme_override_styles/focus = ExtResource("3_234u0")
+script = ExtResource("4_a7rjj")
+
+[node name="SoundButton" type="Button" parent="."]
+offset_left = 315.0
+offset_top = 879.0
+offset_right = 482.88
+offset_bottom = 1046.88
+theme_override_styles/normal = ExtResource("4_lvy8p")
+theme_override_styles/normal_mirrored = ExtResource("4_lvy8p")
+theme_override_styles/pressed = ExtResource("4_lvy8p")
+theme_override_styles/pressed_mirrored = ExtResource("4_lvy8p")
+theme_override_styles/hover = ExtResource("4_lvy8p")
+theme_override_styles/hover_mirrored = ExtResource("4_lvy8p")
+theme_override_styles/hover_pressed = ExtResource("4_lvy8p")
+theme_override_styles/hover_pressed_mirrored = ExtResource("4_lvy8p")
+theme_override_styles/disabled = ExtResource("4_lvy8p")
+theme_override_styles/disabled_mirrored = ExtResource("4_lvy8p")
+theme_override_styles/focus = ExtResource("4_lvy8p")
+script = ExtResource("6_j75wj")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="SoundButton"]
+position = Vector2(-315, -879)
+stream = ExtResource("8_lvy8p")
+
+[node name="BackButton" type="Button" parent="."]
+offset_left = 33.0
+offset_top = 910.0
+offset_right = 258.0
+offset_bottom = 1002.0
+theme_override_styles/normal = ExtResource("5_j75wj")
+theme_override_styles/normal_mirrored = ExtResource("5_j75wj")
+theme_override_styles/pressed = ExtResource("5_j75wj")
+theme_override_styles/pressed_mirrored = ExtResource("5_j75wj")
+theme_override_styles/hover = ExtResource("5_j75wj")
+theme_override_styles/hover_mirrored = ExtResource("5_j75wj")
+theme_override_styles/hover_pressed = ExtResource("5_j75wj")
+theme_override_styles/hover_pressed_mirrored = ExtResource("5_j75wj")
+theme_override_styles/disabled = ExtResource("5_j75wj")
+theme_override_styles/disabled_mirrored = ExtResource("5_j75wj")
+theme_override_styles/focus = ExtResource("5_j75wj")
+script = ExtResource("7_234u0")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 222.0
+offset_top = 9.0
+offset_right = 594.0
+offset_bottom = 49.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 334.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("2_a7rjj")
+theme_override_font_sizes/font_size = 30
+text = "O TRABALHO INTELECTUAL"
+
+[connection signal="pressed" from="NextButton" to="NextButton" method="_on_pressed"]
+[connection signal="pressed" from="SoundButton" to="SoundButton" method="_on_pressed"]
+[connection signal="pressed" from="BackButton" to="BackButton" method="_on_pressed"]

@@ -1,0 +1,158 @@
+[gd_scene load_steps=10 format=3 uid="uid://bewbae30w177g"]
+
+[ext_resource type="Texture2D" uid="uid://bpk8ptpdfkat5" path="res://assets/Rectangle 2.png" id="1_dxwd1"]
+[ext_resource type="FontFile" uid="uid://07fkf7jv26k0" path="res://assets/fonts/InriaSans-Regular.ttf" id="2_fhwa8"]
+[ext_resource type="StyleBox" uid="uid://di2jcii5db1dn" path="res://assets/buttons/next_button.tres" id="3_1j0cd"]
+[ext_resource type="Script" uid="uid://ch5b5i4nfxrpe" path="res://cenas/next_button2.gd" id="4_fhwa8"]
+[ext_resource type="StyleBox" uid="uid://de3mti8838fxf" path="res://assets/buttons/sound_button.tres" id="4_wuv4a"]
+[ext_resource type="StyleBox" uid="uid://2wem8hydwdrr" path="res://assets/buttons/back_button.tres" id="5_vxrif"]
+[ext_resource type="Script" uid="uid://dajfltdqvddyw" path="res://cenas/mute_button_page2.gd" id="6_vxrif"]
+[ext_resource type="Script" uid="uid://cjp5vcio74se8" path="res://cenas/back_button.gd" id="7_1j0cd"]
+[ext_resource type="AudioStream" uid="uid://bbt4i5vimgk2x" path="res://assets/audios/audio_page2.wav" id="8_wuv4a"]
+
+[node name="Page2" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 3.0
+offset_top = -213.0
+offset_right = 800.0
+offset_bottom = 1129.0
+texture = ExtResource("1_dxwd1")
+
+[node name="ColorRect" type="ColorRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = 237.0
+offset_top = 229.0
+offset_right = 579.0
+offset_bottom = 269.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="TextureRect/ColorRect"]
+layout_mode = 0
+offset_left = 6.0
+offset_right = 332.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("2_fhwa8")
+theme_override_font_sizes/font_size = 30
+text = "A ORIGEM DO TRABALHO"
+
+[node name="ColorRect2" type="ColorRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 528.0
+offset_right = 661.0
+offset_bottom = 584.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="TextureRect/ColorRect2"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 503.0
+offset_bottom = 48.0
+theme_override_fonts/font = ExtResource("2_fhwa8")
+theme_override_font_sizes/font_size = 16
+text = "Toque o dedo na tela para o índigena pescar o peixe, que é uma das 
+primeiras formas de trabalho existente.  "
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 165.0
+offset_top = 71.0
+offset_right = 651.0
+offset_bottom = 142.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 6.0
+offset_right = 483.0
+offset_bottom = 66.0
+theme_override_fonts/font = ExtResource("2_fhwa8")
+theme_override_font_sizes/font_size = 16
+text = "O trabalho teve origem nas civilizações antigas, em que a produção era 
+entendida como coletiva e voltada para a sobrevivência. Realizava-se, 
+principalmente, pela caça, pesca e coleta."
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 147.0
+offset_top = 156.0
+offset_right = 674.0
+offset_bottom = 277.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="ColorRect2"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = -17.0
+offset_right = 510.0
+offset_bottom = 118.0
+theme_override_fonts/font = ExtResource("2_fhwa8")
+theme_override_font_sizes/font_size = 16
+text = "
+Pode-se evidenciar que estabelecer uma história ou origem do trabalho 
+passa por considerar o fim do período de grandes migrações humanas e o 
+surgimento das primeiras cidades. Ao fixarem-se, os seres humanos 
+passaram a desenvolver instrumentos que lhes conferissem formas de 
+reproduzir sua subsistência."
+
+[node name="NextButton" type="Button" parent="."]
+offset_left = 545.0
+offset_top = 928.0
+offset_right = 768.18005
+offset_bottom = 1007.99
+theme_override_styles/normal = ExtResource("3_1j0cd")
+theme_override_styles/normal_mirrored = ExtResource("3_1j0cd")
+theme_override_styles/pressed = ExtResource("3_1j0cd")
+theme_override_styles/pressed_mirrored = ExtResource("3_1j0cd")
+theme_override_styles/hover = ExtResource("3_1j0cd")
+theme_override_styles/hover_mirrored = ExtResource("3_1j0cd")
+theme_override_styles/hover_pressed = ExtResource("3_1j0cd")
+theme_override_styles/hover_pressed_mirrored = ExtResource("3_1j0cd")
+theme_override_styles/disabled = ExtResource("3_1j0cd")
+theme_override_styles/disabled_mirrored = ExtResource("3_1j0cd")
+theme_override_styles/focus = ExtResource("3_1j0cd")
+script = ExtResource("4_fhwa8")
+
+[node name="SoundButton" type="Button" parent="."]
+offset_left = 311.0
+offset_top = 875.0
+offset_right = 506.88
+offset_bottom = 1055.88
+theme_override_styles/normal = ExtResource("4_wuv4a")
+theme_override_styles/normal_mirrored = ExtResource("4_wuv4a")
+theme_override_styles/pressed = ExtResource("4_wuv4a")
+theme_override_styles/pressed_mirrored = ExtResource("4_wuv4a")
+theme_override_styles/hover = ExtResource("4_wuv4a")
+theme_override_styles/hover_mirrored = ExtResource("4_wuv4a")
+theme_override_styles/hover_pressed = ExtResource("4_wuv4a")
+theme_override_styles/hover_pressed_mirrored = ExtResource("4_wuv4a")
+theme_override_styles/disabled = ExtResource("4_wuv4a")
+theme_override_styles/disabled_mirrored = ExtResource("4_wuv4a")
+theme_override_styles/focus = ExtResource("4_wuv4a")
+script = ExtResource("6_vxrif")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="SoundButton"]
+position = Vector2(-331, -878)
+stream = ExtResource("8_wuv4a")
+
+[node name="BackButton" type="Button" parent="."]
+offset_left = 49.0
+offset_top = 909.0
+offset_right = 274.0
+offset_bottom = 1001.0
+theme_override_styles/normal = ExtResource("5_vxrif")
+theme_override_styles/normal_mirrored = ExtResource("5_vxrif")
+theme_override_styles/pressed = ExtResource("5_vxrif")
+theme_override_styles/pressed_mirrored = ExtResource("5_vxrif")
+theme_override_styles/hover = ExtResource("5_vxrif")
+theme_override_styles/hover_mirrored = ExtResource("5_vxrif")
+theme_override_styles/hover_pressed = ExtResource("5_vxrif")
+theme_override_styles/hover_pressed_mirrored = ExtResource("5_vxrif")
+theme_override_styles/disabled = ExtResource("5_vxrif")
+theme_override_styles/disabled_mirrored = ExtResource("5_vxrif")
+theme_override_styles/focus = ExtResource("5_vxrif")
+script = ExtResource("7_1j0cd")
+
+[connection signal="pressed" from="NextButton" to="NextButton" method="_on_pressed"]
+[connection signal="pressed" from="SoundButton" to="SoundButton" method="_on_pressed"]
+[connection signal="pressed" from="BackButton" to="BackButton" method="_on_pressed"]

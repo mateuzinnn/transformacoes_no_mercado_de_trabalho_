@@ -1,0 +1,158 @@
+[gd_scene load_steps=13 format=3 uid="uid://bkbaw5lm2topp"]
+
+[ext_resource type="Script" uid="uid://domxu373mmhtp" path="res://cenas/page_7.gd" id="1_0b51r"]
+[ext_resource type="Texture2D" uid="uid://bvcg3h7c5mpy0" path="res://assets/Rectangle 17.png" id="1_rvvs7"]
+[ext_resource type="FontFile" uid="uid://07fkf7jv26k0" path="res://assets/fonts/InriaSans-Regular.ttf" id="2_yywjf"]
+[ext_resource type="StyleBox" uid="uid://de3mti8838fxf" path="res://assets/buttons/sound_button.tres" id="4_moth7"]
+[ext_resource type="StyleBox" uid="uid://di2jcii5db1dn" path="res://assets/buttons/next_button.tres" id="5_0b51r"]
+[ext_resource type="Script" uid="uid://dajfltdqvddyw" path="res://cenas/mute_button_page2.gd" id="5_bva27"]
+[ext_resource type="StyleBox" uid="uid://2wem8hydwdrr" path="res://assets/buttons/back_button.tres" id="5_knqn6"]
+[ext_resource type="Script" uid="uid://bkm7qmoq6xnbs" path="res://cenas/next_button7.gd" id="6_0b51r"]
+[ext_resource type="AudioStream" uid="uid://6nstsce7mrlb" path="res://assets/audios/audio_page7.wav" id="6_mmtg0"]
+[ext_resource type="Script" uid="uid://dc8xrpqd762y3" path="res://cenas/back_button6.gd" id="7_ohgv0"]
+[ext_resource type="Script" uid="uid://boqjq5c3sd7ue" path="res://cenas/video_stream_player.gd" id="9_knqn6"]
+[ext_resource type="VideoStream" uid="uid://b2e78laay0hwp" path="res://assets/videos/documentario-trabalho3.ogv" id="11_bva27"]
+
+[node name="Page7" type="Node2D"]
+script = ExtResource("1_0b51r")
+metadata/_edit_horizontal_guides_ = [716.0]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 8.0
+offset_top = 20.0
+offset_right = 857.0
+offset_bottom = 1158.0
+texture = ExtResource("1_rvvs7")
+
+[node name="ColorRect6" type="ColorRect" parent="."]
+offset_left = 174.0
+offset_top = 78.0
+offset_right = 750.0
+offset_bottom = 199.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="ColorRect6"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 6.0
+offset_right = 679.0
+offset_bottom = 93.0
+theme_override_fonts/font = ExtResource("2_yywjf")
+theme_override_font_sizes/font_size = 18
+text = "Atualmente, os avanços tecnológicos e a automação transformam o 
+mercado de trabalho, fazendo com que algumas profissões sejam 
+impactadas negativamente enquanto outras se fortalecem, exigindo 
+que a humanidade se adapte continuamente a essas novas tecnologias."
+
+[node name="SoundButton" type="Button" parent="."]
+offset_left = 358.0
+offset_top = 954.0
+offset_right = 525.88
+offset_bottom = 1121.88
+theme_override_styles/normal = ExtResource("4_moth7")
+theme_override_styles/normal_mirrored = ExtResource("4_moth7")
+theme_override_styles/pressed = ExtResource("4_moth7")
+theme_override_styles/pressed_mirrored = ExtResource("4_moth7")
+theme_override_styles/hover = ExtResource("4_moth7")
+theme_override_styles/hover_mirrored = ExtResource("4_moth7")
+theme_override_styles/hover_pressed = ExtResource("4_moth7")
+theme_override_styles/hover_pressed_mirrored = ExtResource("4_moth7")
+theme_override_styles/disabled = ExtResource("4_moth7")
+theme_override_styles/disabled_mirrored = ExtResource("4_moth7")
+theme_override_styles/focus = ExtResource("4_moth7")
+script = ExtResource("5_bva27")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="SoundButton"]
+stream = ExtResource("6_mmtg0")
+
+[node name="NextButton" type="Button" parent="."]
+offset_left = 581.0
+offset_top = 1002.0
+offset_right = 804.18005
+offset_bottom = 1081.99
+theme_override_styles/normal = ExtResource("5_0b51r")
+theme_override_styles/normal_mirrored = ExtResource("5_0b51r")
+theme_override_styles/pressed = ExtResource("5_0b51r")
+theme_override_styles/pressed_mirrored = ExtResource("5_0b51r")
+theme_override_styles/hover = ExtResource("5_0b51r")
+theme_override_styles/hover_mirrored = ExtResource("5_0b51r")
+theme_override_styles/hover_pressed = ExtResource("5_0b51r")
+theme_override_styles/hover_pressed_mirrored = ExtResource("5_0b51r")
+theme_override_styles/disabled = ExtResource("5_0b51r")
+theme_override_styles/disabled_mirrored = ExtResource("5_0b51r")
+theme_override_styles/focus = ExtResource("5_0b51r")
+script = ExtResource("6_0b51r")
+
+[node name="BackButton" type="Button" parent="."]
+offset_left = 76.0
+offset_top = 985.0
+offset_right = 301.0
+offset_bottom = 1077.0
+theme_override_styles/normal = ExtResource("5_knqn6")
+theme_override_styles/normal_mirrored = ExtResource("5_knqn6")
+theme_override_styles/pressed = ExtResource("5_knqn6")
+theme_override_styles/pressed_mirrored = ExtResource("5_knqn6")
+theme_override_styles/hover = ExtResource("5_knqn6")
+theme_override_styles/hover_mirrored = ExtResource("5_knqn6")
+theme_override_styles/hover_pressed = ExtResource("5_knqn6")
+theme_override_styles/hover_pressed_mirrored = ExtResource("5_knqn6")
+theme_override_styles/disabled = ExtResource("5_knqn6")
+theme_override_styles/disabled_mirrored = ExtResource("5_knqn6")
+theme_override_styles/focus = ExtResource("5_knqn6")
+script = ExtResource("7_ohgv0")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+offset_left = 4.0
+offset_top = 336.0
+offset_right = 853.0
+offset_bottom = 959.0
+stream = ExtResource("11_bva27")
+expand = true
+script = ExtResource("9_knqn6")
+
+[node name="ColorRect6" type="ColorRect" parent="VideoStreamPlayer"]
+layout_mode = 0
+offset_left = 190.0
+offset_top = -131.0
+offset_right = 719.0
+offset_bottom = 7.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="VideoStreamPlayer/ColorRect6"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 6.0
+offset_right = 240.0
+offset_bottom = 49.0
+theme_override_fonts/font = ExtResource("2_yywjf")
+theme_override_font_sizes/font_size = 18
+text = "Clique na tela para assistir um trecho de um documentário. 
+Primeiramente o responsável pela automação de uma companhia
+áerea falará sobre as automações em aeroportos e após, um 
+consultor de carreiras fala sobre a mudança com a chegada
+das automações. "
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(430, 593)
+zoom = Vector2(0.9, 0.9)
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+offset_left = 324.0
+offset_top = 35.0
+offset_right = 579.0
+offset_bottom = 70.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="ColorRect3"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 3.0
+offset_right = 190.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("2_yywjf")
+theme_override_font_sizes/font_size = 22
+text = "O FUTURO DO TRABALHO"
+
+[connection signal="pressed" from="SoundButton" to="SoundButton" method="_on_pressed"]
+[connection signal="pressed" from="NextButton" to="NextButton" method="_on_pressed"]
+[connection signal="pressed" from="BackButton" to="BackButton" method="_on_pressed"]

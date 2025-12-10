@@ -1,0 +1,154 @@
+[gd_scene load_steps=11 format=3 uid="uid://ysk7ebgxy5i1"]
+
+[ext_resource type="Texture2D" uid="uid://b53vjy06udpaa" path="res://assets/Gemini_Generated_Image_x7iemjx7iemjx7ie.png" id="1_t8vlo"]
+[ext_resource type="FontFile" uid="uid://07fkf7jv26k0" path="res://assets/fonts/InriaSans-Regular.ttf" id="2_fcd0e"]
+[ext_resource type="StyleBox" uid="uid://di2jcii5db1dn" path="res://assets/buttons/next_button.tres" id="3_f3t27"]
+[ext_resource type="Script" uid="uid://3s7cq1oing1e" path="res://cenas/next_button5.gd" id="4_fcd0e"]
+[ext_resource type="StyleBox" uid="uid://de3mti8838fxf" path="res://assets/buttons/sound_button.tres" id="4_taejf"]
+[ext_resource type="StyleBox" uid="uid://2wem8hydwdrr" path="res://assets/buttons/back_button.tres" id="5_t8vlo"]
+[ext_resource type="Script" uid="uid://dajfltdqvddyw" path="res://cenas/mute_button_page2.gd" id="6_t8vlo"]
+[ext_resource type="Script" uid="uid://uj3fasfqqntw" path="res://cenas/back_button4.gd" id="7_f3t27"]
+[ext_resource type="AudioStream" uid="uid://ctmejtbm6ehbt" path="res://assets/audios/audio_page5.wav" id="8_taejf"]
+[ext_resource type="Script" uid="uid://c4i5nlvrpcjy7" path="res://cenas/interacao5.gd" id="10_raepd"]
+
+[node name="Page5" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -15.0
+offset_top = 18.0
+offset_right = 768.0
+offset_bottom = 1030.0
+texture = ExtResource("1_t8vlo")
+expand_mode = 1
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 79.0
+offset_top = 87.0
+offset_right = 710.0
+offset_bottom = 303.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="ColorRect2"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 4.0
+offset_right = 633.0
+offset_bottom = 93.0
+theme_override_fonts/font = ExtResource("2_fcd0e")
+theme_override_font_sizes/font_size = 16
+text = "Trabalho doméstico: na classificação dos tipos de trabalho, é imprescindível classificar o 
+trabalho doméstico como modalidade de trabalho. Embora a classificação usual do 
+trabalho envolva a produção e a remuneração, o trabalho doméstico compreende um 
+conjunto de relações e ações que permitem aos indivíduos realizarem o trabalho 
+intelectual e/ou físico. Assim, o trabalho doméstico consiste em um conjunto de atividades 
+realizadas para manter o funcionamento do lar, como limpar, cozinhar, cuidar de crianças 
+ou idosos, além de organizar o ambiente. Por não ser visto como um trabalho remunerado, 
+o trabalho doméstico dispõe de maior vulnerabilidade e precariedade, envolvendo muitas 
+vezes, uma baixa valorização social e econômica."
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+offset_left = 537.0
+offset_top = 339.0
+offset_right = 751.0
+offset_bottom = 437.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="ColorRect3"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 3.0
+offset_right = 190.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("2_fcd0e")
+theme_override_font_sizes/font_size = 16
+text = "Toque para o dono de casa 
+cortar a cebola e colocar na 
+comida que servirá para sua 
+família.  "
+
+[node name="NextButton" type="Button" parent="."]
+offset_left = 529.0
+offset_top = 929.0
+offset_right = 752.18005
+offset_bottom = 1008.99
+theme_override_styles/normal = ExtResource("3_f3t27")
+theme_override_styles/normal_mirrored = ExtResource("3_f3t27")
+theme_override_styles/pressed = ExtResource("3_f3t27")
+theme_override_styles/pressed_mirrored = ExtResource("3_f3t27")
+theme_override_styles/hover = ExtResource("3_f3t27")
+theme_override_styles/hover_mirrored = ExtResource("3_f3t27")
+theme_override_styles/hover_pressed = ExtResource("3_f3t27")
+theme_override_styles/hover_pressed_mirrored = ExtResource("3_f3t27")
+theme_override_styles/disabled = ExtResource("3_f3t27")
+theme_override_styles/disabled_mirrored = ExtResource("3_f3t27")
+theme_override_styles/focus = ExtResource("3_f3t27")
+script = ExtResource("4_fcd0e")
+
+[node name="SoundButton" type="Button" parent="."]
+offset_left = 315.0
+offset_top = 879.0
+offset_right = 482.88
+offset_bottom = 1046.88
+theme_override_styles/normal = ExtResource("4_taejf")
+theme_override_styles/normal_mirrored = ExtResource("4_taejf")
+theme_override_styles/pressed = ExtResource("4_taejf")
+theme_override_styles/pressed_mirrored = ExtResource("4_taejf")
+theme_override_styles/hover = ExtResource("4_taejf")
+theme_override_styles/hover_mirrored = ExtResource("4_taejf")
+theme_override_styles/hover_pressed = ExtResource("4_taejf")
+theme_override_styles/hover_pressed_mirrored = ExtResource("4_taejf")
+theme_override_styles/disabled = ExtResource("4_taejf")
+theme_override_styles/disabled_mirrored = ExtResource("4_taejf")
+theme_override_styles/focus = ExtResource("4_taejf")
+script = ExtResource("6_t8vlo")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="SoundButton"]
+position = Vector2(-315, -879)
+stream = ExtResource("8_taejf")
+
+[node name="BackButton" type="Button" parent="."]
+offset_left = 33.0
+offset_top = 910.0
+offset_right = 258.0
+offset_bottom = 1002.0
+theme_override_styles/normal = ExtResource("5_t8vlo")
+theme_override_styles/normal_mirrored = ExtResource("5_t8vlo")
+theme_override_styles/pressed = ExtResource("5_t8vlo")
+theme_override_styles/pressed_mirrored = ExtResource("5_t8vlo")
+theme_override_styles/hover = ExtResource("5_t8vlo")
+theme_override_styles/hover_mirrored = ExtResource("5_t8vlo")
+theme_override_styles/hover_pressed = ExtResource("5_t8vlo")
+theme_override_styles/hover_pressed_mirrored = ExtResource("5_t8vlo")
+theme_override_styles/disabled = ExtResource("5_t8vlo")
+theme_override_styles/disabled_mirrored = ExtResource("5_t8vlo")
+theme_override_styles/focus = ExtResource("5_t8vlo")
+script = ExtResource("7_f3t27")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 236.0
+offset_top = 25.0
+offset_right = 578.0
+offset_bottom = 65.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 6.0
+offset_right = 344.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("2_fcd0e")
+theme_override_font_sizes/font_size = 30
+text = "O TRABALHO DOMÉSTICO"
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = -20.0
+offset_top = 388.0
+offset_right = 222.0
+offset_bottom = 878.0
+stretch_mode = 3
+script = ExtResource("10_raepd")
+
+[connection signal="pressed" from="NextButton" to="NextButton" method="_on_pressed"]
+[connection signal="pressed" from="SoundButton" to="SoundButton" method="_on_pressed"]
+[connection signal="pressed" from="BackButton" to="BackButton" method="_on_pressed"]
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]

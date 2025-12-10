@@ -1,0 +1,183 @@
+[gd_scene load_steps=10 format=3 uid="uid://bkdg7p78hce3r"]
+
+[ext_resource type="StyleBox" uid="uid://1uiwb54if2d8" path="res://assets/buttons/home_button.tres" id="1_cosis"]
+[ext_resource type="Script" uid="uid://6yjlb2hhh120" path="res://cenas/home_button.gd" id="2_blcbq"]
+[ext_resource type="Texture2D" uid="uid://bvcg3h7c5mpy0" path="res://assets/Rectangle 17.png" id="3_3i6sn"]
+[ext_resource type="FontFile" uid="uid://07fkf7jv26k0" path="res://assets/fonts/InriaSans-Regular.ttf" id="4_4dexq"]
+[ext_resource type="StyleBox" uid="uid://de3mti8838fxf" path="res://assets/buttons/sound_button.tres" id="5_4kk34"]
+[ext_resource type="Script" uid="uid://dajfltdqvddyw" path="res://cenas/mute_button_page2.gd" id="6_3i6sn"]
+[ext_resource type="StyleBox" uid="uid://2wem8hydwdrr" path="res://assets/buttons/back_button.tres" id="6_sgqci"]
+[ext_resource type="AudioStream" uid="uid://vrfj6b6ho15v" path="res://assets/audios/audio_page8.wav" id="7_4dexq"]
+[ext_resource type="Script" uid="uid://drgf2jkr508wb" path="res://cenas/back_button_7.gd" id="7_cosis"]
+
+[node name="Page9" type="Node2D"]
+
+[node name="NextButton" type="Button" parent="."]
+offset_left = 421.0
+offset_top = 574.0
+offset_right = 661.0
+offset_bottom = 814.0
+theme_override_styles/normal = ExtResource("1_cosis")
+theme_override_styles/normal_mirrored = ExtResource("1_cosis")
+theme_override_styles/pressed = ExtResource("1_cosis")
+theme_override_styles/pressed_mirrored = ExtResource("1_cosis")
+theme_override_styles/hover = ExtResource("1_cosis")
+theme_override_styles/hover_mirrored = ExtResource("1_cosis")
+theme_override_styles/hover_pressed = ExtResource("1_cosis")
+theme_override_styles/hover_pressed_mirrored = ExtResource("1_cosis")
+theme_override_styles/disabled = ExtResource("1_cosis")
+theme_override_styles/disabled_mirrored = ExtResource("1_cosis")
+theme_override_styles/focus = ExtResource("1_cosis")
+script = ExtResource("2_blcbq")
+
+[node name="TextureRect" type="TextureRect" parent="NextButton"]
+layout_mode = 0
+offset_left = -422.0
+offset_top = -573.0
+offset_right = 346.0
+offset_bottom = 451.0
+texture = ExtResource("3_3i6sn")
+
+[node name="ColorRect6" type="ColorRect" parent="NextButton/TextureRect"]
+layout_mode = 0
+offset_left = 107.0
+offset_top = 226.0
+offset_right = 689.0
+offset_bottom = 470.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="NextButton/TextureRect/ColorRect6"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 6.0
+offset_right = 240.0
+offset_bottom = 49.0
+theme_override_fonts/font = ExtResource("4_4dexq")
+theme_override_font_sizes/font_size = 36
+text = "Autor: Mateus Almeida Valença
+Orientador: Prof. Ewerton
+Mendonça
+Disciplina: Computação Gráfica e 
+Sistemas Multimídia"
+
+[node name="ColorRect7" type="ColorRect" parent="NextButton/TextureRect"]
+layout_mode = 0
+offset_left = 330.0
+offset_top = 486.0
+offset_right = 448.0
+offset_bottom = 545.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="NextButton/TextureRect/ColorRect7"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 6.0
+offset_right = 240.0
+offset_bottom = 49.0
+theme_override_fonts/font = ExtResource("4_4dexq")
+theme_override_font_sizes/font_size = 36
+text = "2025.2"
+
+[node name="ColorRect8" type="ColorRect" parent="NextButton/TextureRect"]
+layout_mode = 0
+offset_left = 146.0
+offset_top = 79.0
+offset_right = 647.0
+offset_bottom = 197.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="NextButton/TextureRect/ColorRect8"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 6.0
+offset_right = 240.0
+offset_bottom = 49.0
+theme_override_fonts/font = ExtResource("4_4dexq")
+theme_override_font_sizes/font_size = 36
+text = "TRANFORMAÇÕES NO
+MUNDO DO TRABALHO"
+
+[node name="ColorRect6" type="ColorRect" parent="NextButton"]
+layout_mode = 0
+offset_left = -315.0
+offset_top = 12.0
+offset_right = 267.0
+offset_bottom = 165.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="NextButton/ColorRect6"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 6.0
+offset_right = 240.0
+offset_bottom = 49.0
+theme_override_fonts/font = ExtResource("4_4dexq")
+theme_override_font_sizes/font_size = 36
+text = "\"História do trabalho\" em: https://
+brasilescola.uol.com.br/sociologia/o-
+trabalho-futuro.htm"
+
+[node name="NextButton" type="Button" parent="NextButton"]
+layout_mode = 0
+offset_left = 105.0
+offset_top = 230.0
+offset_right = 345.0
+offset_bottom = 470.0
+theme_override_styles/normal = ExtResource("1_cosis")
+theme_override_styles/normal_mirrored = ExtResource("1_cosis")
+theme_override_styles/pressed = ExtResource("1_cosis")
+theme_override_styles/pressed_mirrored = ExtResource("1_cosis")
+theme_override_styles/hover = ExtResource("1_cosis")
+theme_override_styles/hover_mirrored = ExtResource("1_cosis")
+theme_override_styles/hover_pressed = ExtResource("1_cosis")
+theme_override_styles/hover_pressed_mirrored = ExtResource("1_cosis")
+theme_override_styles/disabled = ExtResource("1_cosis")
+theme_override_styles/disabled_mirrored = ExtResource("1_cosis")
+theme_override_styles/focus = ExtResource("1_cosis")
+script = ExtResource("2_blcbq")
+
+[node name="SoundButton" type="Button" parent="NextButton"]
+layout_mode = 0
+offset_left = -84.0
+offset_top = 265.0
+offset_right = 83.880005
+offset_bottom = 432.88
+theme_override_styles/normal = ExtResource("5_4kk34")
+theme_override_styles/normal_mirrored = ExtResource("5_4kk34")
+theme_override_styles/pressed = ExtResource("5_4kk34")
+theme_override_styles/pressed_mirrored = ExtResource("5_4kk34")
+theme_override_styles/hover = ExtResource("5_4kk34")
+theme_override_styles/hover_mirrored = ExtResource("5_4kk34")
+theme_override_styles/hover_pressed = ExtResource("5_4kk34")
+theme_override_styles/hover_pressed_mirrored = ExtResource("5_4kk34")
+theme_override_styles/disabled = ExtResource("5_4kk34")
+theme_override_styles/disabled_mirrored = ExtResource("5_4kk34")
+theme_override_styles/focus = ExtResource("5_4kk34")
+script = ExtResource("6_3i6sn")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="NextButton/SoundButton"]
+stream = ExtResource("7_4dexq")
+
+[node name="BackButton" type="Button" parent="NextButton"]
+layout_mode = 0
+offset_left = -381.0
+offset_top = 298.0
+offset_right = -156.0
+offset_bottom = 390.0
+theme_override_styles/normal = ExtResource("6_sgqci")
+theme_override_styles/normal_mirrored = ExtResource("6_sgqci")
+theme_override_styles/pressed = ExtResource("6_sgqci")
+theme_override_styles/pressed_mirrored = ExtResource("6_sgqci")
+theme_override_styles/hover = ExtResource("6_sgqci")
+theme_override_styles/hover_mirrored = ExtResource("6_sgqci")
+theme_override_styles/hover_pressed = ExtResource("6_sgqci")
+theme_override_styles/hover_pressed_mirrored = ExtResource("6_sgqci")
+theme_override_styles/disabled = ExtResource("6_sgqci")
+theme_override_styles/disabled_mirrored = ExtResource("6_sgqci")
+theme_override_styles/focus = ExtResource("6_sgqci")
+script = ExtResource("7_cosis")
+
+[connection signal="pressed" from="NextButton" to="NextButton" method="_on_pressed"]
+[connection signal="pressed" from="NextButton/NextButton" to="NextButton/NextButton" method="_on_pressed"]
+[connection signal="pressed" from="NextButton/SoundButton" to="NextButton/SoundButton" method="_on_pressed"]
+[connection signal="pressed" from="NextButton/BackButton" to="NextButton/BackButton" method="_on_pressed"]

@@ -1,0 +1,6 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://2wem8hydwdrr"]
+
+[ext_resource type="Texture2D" uid="uid://dyuon1mrrtp0q" path="res://assets/Gemini_Generated_Image_s3o3iks3o3iks3o3 (2) 1.png" id="1_at201"]
+
+[resource]
+texture = ExtResource("1_at201")

@@ -1,0 +1,154 @@
+[gd_scene load_steps=10 format=3 uid="uid://cdj5pt13tkkhg"]
+
+[ext_resource type="Texture2D" uid="uid://c8f1t5bcbq5fa" path="res://assets/Rectangle 3.png" id="1_lsm23"]
+[ext_resource type="FontFile" uid="uid://07fkf7jv26k0" path="res://assets/fonts/InriaSans-Regular.ttf" id="2_l5l5l"]
+[ext_resource type="StyleBox" uid="uid://di2jcii5db1dn" path="res://assets/buttons/next_button.tres" id="3_ouylh"]
+[ext_resource type="StyleBox" uid="uid://de3mti8838fxf" path="res://assets/buttons/sound_button.tres" id="4_kiq3x"]
+[ext_resource type="Script" uid="uid://i2qlgy0y31pn" path="res://cenas/next_button3.gd" id="4_l5l5l"]
+[ext_resource type="StyleBox" uid="uid://2wem8hydwdrr" path="res://assets/buttons/back_button.tres" id="5_m2gba"]
+[ext_resource type="Script" uid="uid://dajfltdqvddyw" path="res://cenas/mute_button_page2.gd" id="6_m2gba"]
+[ext_resource type="Script" uid="uid://bbid12eqaq1wt" path="res://cenas/back_button2.gd" id="7_ouylh"]
+[ext_resource type="AudioStream" uid="uid://b2n6lt4ydtsjq" path="res://assets/audios/audio_page3.wav" id="8_kiq3x"]
+
+[node name="Page3" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_lsm23")
+
+[node name="ColorRect" type="ColorRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = 236.0
+offset_top = 25.0
+offset_right = 578.0
+offset_bottom = 65.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="TextureRect/ColorRect"]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 339.0
+offset_bottom = 37.0
+theme_override_fonts/font = ExtResource("2_l5l5l")
+theme_override_font_sizes/font_size = 30
+text = "AS FORMAS DE TRABALHO"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 131.0
+offset_top = 83.0
+offset_right = 676.0
+offset_bottom = 139.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 6.0
+offset_right = 539.0
+offset_bottom = 45.0
+theme_override_fonts/font = ExtResource("2_l5l5l")
+theme_override_font_sizes/font_size = 16
+text = "Pode-se estabelecer uma diferenciação com base em três grandes categorias, 
+que reúnem diferentes formas de trabalho."
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 87.0
+offset_top = 160.0
+offset_right = 718.0
+offset_bottom = 301.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="ColorRect2"]
+layout_mode = 0
+offset_left = -1.0
+offset_right = 627.0
+offset_bottom = 135.0
+theme_override_fonts/font = ExtResource("2_l5l5l")
+theme_override_font_sizes/font_size = 16
+text = "Trabalho físico/material: pode ser definido, sobretudo, como uma forma de trabalho que se
+volta para a produção material, ou seja, refere-se a objetos, coisas, produtos. Dessa 
+maneira, o trabalho físico exige esforço corporal para realizar tarefas, como força muscular, 
+movimentação, levantamento de peso ou repetição. O trabalho físico é a principal forma de 
+trabalho em nossa sociedade, permeando áreas como, por exemplo, construção civil, 
+agricultura, indústria ou serviços."
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+offset_left = 289.0
+offset_top = 687.0
+offset_right = 584.0
+offset_bottom = 782.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="ColorRect3"]
+layout_mode = 0
+offset_left = 6.0
+offset_right = 273.0
+offset_bottom = 45.0
+theme_override_fonts/font = ExtResource("2_l5l5l")
+theme_override_font_sizes/font_size = 16
+text = "Ajude os contrutores. Arraste a viga de 
+ferro para o chão para que eles consigam
+prosseguir com a obra, que é um exemplo
+de um trabalho físico/material."
+
+[node name="NextButton" type="Button" parent="."]
+offset_left = 526.0
+offset_top = 937.0
+offset_right = 749.18005
+offset_bottom = 1016.99
+theme_override_styles/normal = ExtResource("3_ouylh")
+theme_override_styles/normal_mirrored = ExtResource("3_ouylh")
+theme_override_styles/pressed = ExtResource("3_ouylh")
+theme_override_styles/pressed_mirrored = ExtResource("3_ouylh")
+theme_override_styles/hover = ExtResource("3_ouylh")
+theme_override_styles/hover_mirrored = ExtResource("3_ouylh")
+theme_override_styles/hover_pressed = ExtResource("3_ouylh")
+theme_override_styles/hover_pressed_mirrored = ExtResource("3_ouylh")
+theme_override_styles/disabled = ExtResource("3_ouylh")
+theme_override_styles/disabled_mirrored = ExtResource("3_ouylh")
+theme_override_styles/focus = ExtResource("3_ouylh")
+script = ExtResource("4_l5l5l")
+
+[node name="SoundButton" type="Button" parent="."]
+offset_left = 312.0
+offset_top = 887.0
+offset_right = 479.88
+offset_bottom = 1054.88
+theme_override_styles/normal = ExtResource("4_kiq3x")
+theme_override_styles/normal_mirrored = ExtResource("4_kiq3x")
+theme_override_styles/pressed = ExtResource("4_kiq3x")
+theme_override_styles/pressed_mirrored = ExtResource("4_kiq3x")
+theme_override_styles/hover = ExtResource("4_kiq3x")
+theme_override_styles/hover_mirrored = ExtResource("4_kiq3x")
+theme_override_styles/hover_pressed = ExtResource("4_kiq3x")
+theme_override_styles/hover_pressed_mirrored = ExtResource("4_kiq3x")
+theme_override_styles/disabled = ExtResource("4_kiq3x")
+theme_override_styles/disabled_mirrored = ExtResource("4_kiq3x")
+theme_override_styles/focus = ExtResource("4_kiq3x")
+script = ExtResource("6_m2gba")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="SoundButton"]
+position = Vector2(-312, -887)
+stream = ExtResource("8_kiq3x")
+
+[node name="BackButton" type="Button" parent="."]
+offset_left = 30.0
+offset_top = 918.0
+offset_right = 255.0
+offset_bottom = 1010.0
+theme_override_styles/normal = ExtResource("5_m2gba")
+theme_override_styles/normal_mirrored = ExtResource("5_m2gba")
+theme_override_styles/pressed = ExtResource("5_m2gba")
+theme_override_styles/pressed_mirrored = ExtResource("5_m2gba")
+theme_override_styles/hover = ExtResource("5_m2gba")
+theme_override_styles/hover_mirrored = ExtResource("5_m2gba")
+theme_override_styles/hover_pressed = ExtResource("5_m2gba")
+theme_override_styles/hover_pressed_mirrored = ExtResource("5_m2gba")
+theme_override_styles/disabled = ExtResource("5_m2gba")
+theme_override_styles/disabled_mirrored = ExtResource("5_m2gba")
+theme_override_styles/focus = ExtResource("5_m2gba")
+script = ExtResource("7_ouylh")
+
+[connection signal="pressed" from="NextButton" to="NextButton" method="_on_pressed"]
+[connection signal="pressed" from="SoundButton" to="SoundButton" method="_on_pressed"]
+[connection signal="pressed" from="BackButton" to="BackButton" method="_on_pressed"]

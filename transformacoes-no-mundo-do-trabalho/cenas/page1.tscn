@@ -1,0 +1,109 @@
+[gd_scene load_steps=8 format=3 uid="uid://cqplorsv3mfdv"]
+
+[ext_resource type="Texture2D" uid="uid://c233ixe1xrtjn" path="res://assets/background_capa.png" id="1_ngbs8"]
+[ext_resource type="FontFile" uid="uid://07fkf7jv26k0" path="res://assets/fonts/InriaSans-Regular.ttf" id="2_rfifn"]
+[ext_resource type="StyleBox" uid="uid://di2jcii5db1dn" path="res://assets/buttons/next_button.tres" id="3_mmscc"]
+[ext_resource type="StyleBox" uid="uid://de3mti8838fxf" path="res://assets/buttons/sound_button.tres" id="4_r86u2"]
+[ext_resource type="Script" uid="uid://b2wd5by02eyik" path="res://cenas/script_next_button.gd" id="4_rfifn"]
+[ext_resource type="Script" uid="uid://dajfltdqvddyw" path="res://cenas/mute_button_page2.gd" id="6_r86u2"]
+[ext_resource type="AudioStream" uid="uid://kihw74j0ge83" path="res://assets/audios/audio_page1.wav" id="7_hql1c"]
+
+[node name="Page1" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 768.0
+offset_bottom = 1022.0
+texture = ExtResource("1_ngbs8")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 41.0
+offset_top = 251.0
+offset_right = 707.0
+offset_bottom = 375.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 6.0
+offset_right = 652.0
+offset_bottom = 138.0
+theme_override_fonts/font = ExtResource("2_rfifn")
+theme_override_font_sizes/font_size = 48
+text = "TRANSFORMAÇÕES NO MUNDO
+ DO TRABALHO"
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 84.0
+offset_top = 397.0
+offset_right = 680.0
+offset_bottom = 466.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label2" type="Label" parent="ColorRect2"]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 9.0
+offset_right = 751.0
+offset_bottom = 147.0
+theme_override_fonts/font = ExtResource("2_rfifn")
+theme_override_font_sizes/font_size = 36
+text = "AUTOR: MATEUS ALMEIDA VALENÇA"
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+offset_left = 327.0
+offset_top = 514.0
+offset_right = 455.0
+offset_bottom = 576.0
+color = Color(0.19607843, 0.101960786, 0.9098039, 1)
+
+[node name="Label3" type="Label" parent="ColorRect3"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 6.0
+offset_right = 122.0
+offset_bottom = 60.0
+theme_override_fonts/font = ExtResource("2_rfifn")
+theme_override_font_sizes/font_size = 36
+text = "2025.2"
+
+[node name="NextButton" type="Button" parent="."]
+offset_left = 526.0
+offset_top = 898.0
+offset_right = 749.18005
+offset_bottom = 977.99
+theme_override_styles/normal = ExtResource("3_mmscc")
+theme_override_styles/normal_mirrored = ExtResource("3_mmscc")
+theme_override_styles/pressed = ExtResource("3_mmscc")
+theme_override_styles/pressed_mirrored = ExtResource("3_mmscc")
+theme_override_styles/hover = ExtResource("3_mmscc")
+theme_override_styles/hover_mirrored = ExtResource("3_mmscc")
+theme_override_styles/hover_pressed = ExtResource("3_mmscc")
+theme_override_styles/hover_pressed_mirrored = ExtResource("3_mmscc")
+theme_override_styles/disabled = ExtResource("3_mmscc")
+theme_override_styles/disabled_mirrored = ExtResource("3_mmscc")
+theme_override_styles/focus = ExtResource("3_mmscc")
+script = ExtResource("4_rfifn")
+
+[node name="SoundButton" type="Button" parent="."]
+offset_left = 312.0
+offset_top = 848.0
+offset_right = 479.88
+offset_bottom = 1015.88
+theme_override_styles/normal = ExtResource("4_r86u2")
+theme_override_styles/normal_mirrored = ExtResource("4_r86u2")
+theme_override_styles/pressed = ExtResource("4_r86u2")
+theme_override_styles/pressed_mirrored = ExtResource("4_r86u2")
+theme_override_styles/hover = ExtResource("4_r86u2")
+theme_override_styles/hover_mirrored = ExtResource("4_r86u2")
+theme_override_styles/hover_pressed = ExtResource("4_r86u2")
+theme_override_styles/hover_pressed_mirrored = ExtResource("4_r86u2")
+theme_override_styles/disabled = ExtResource("4_r86u2")
+theme_override_styles/disabled_mirrored = ExtResource("4_r86u2")
+theme_override_styles/focus = ExtResource("4_r86u2")
+script = ExtResource("6_r86u2")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="SoundButton"]
+stream = ExtResource("7_hql1c")
+
+[connection signal="pressed" from="NextButton" to="NextButton" method="_on_pressed"]
+[connection signal="pressed" from="SoundButton" to="SoundButton" method="_on_pressed"]
