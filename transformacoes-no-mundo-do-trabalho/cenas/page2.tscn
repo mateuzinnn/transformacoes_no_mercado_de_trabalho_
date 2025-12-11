@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://bewbae30w177g"]
+[gd_scene load_steps=11 format=3 uid="uid://bewbae30w177g"]
 
-[ext_resource type="Texture2D" uid="uid://bpk8ptpdfkat5" path="res://assets/Rectangle 2.png" id="1_dxwd1"]
+[ext_resource type="Texture2D" uid="uid://3ovrrew3rgpe" path="res://assets/fundo_page2.png" id="1_vxrif"]
 [ext_resource type="FontFile" uid="uid://07fkf7jv26k0" path="res://assets/fonts/InriaSans-Regular.ttf" id="2_fhwa8"]
+[ext_resource type="PackedScene" uid="uid://cdsu2u3rskrh6" path="res://assets/animations/node_2d.tscn" id="2_sx0c8"]
 [ext_resource type="StyleBox" uid="uid://di2jcii5db1dn" path="res://assets/buttons/next_button.tres" id="3_1j0cd"]
 [ext_resource type="Script" uid="uid://ch5b5i4nfxrpe" path="res://cenas/next_button2.gd" id="4_fhwa8"]
 [ext_resource type="StyleBox" uid="uid://de3mti8838fxf" path="res://assets/buttons/sound_button.tres" id="4_wuv4a"]
@@ -15,9 +16,14 @@
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = 3.0
 offset_top = -213.0
-offset_right = 800.0
-offset_bottom = 1129.0
-texture = ExtResource("1_dxwd1")
+offset_right = 798.2183
+offset_bottom = 1126.0
+texture = ExtResource("1_vxrif")
+expand_mode = 1
+
+[node name="Node2D" parent="TextureRect" instance=ExtResource("2_sx0c8")]
+position = Vector2(413, 723.00006)
+scale = Vector2(2.56, 2.62)
 
 [node name="ColorRect" type="ColorRect" parent="TextureRect"]
 layout_mode = 0

@@ -1,0 +1,70 @@
+[gd_scene load_steps=10 format=3 uid="uid://cdsu2u3rskrh6"]
+
+[ext_resource type="Script" uid="uid://ci6c7coxndfai" path="res://node_2d.gd" id="1_xv1l6"]
+[ext_resource type="Texture2D" uid="uid://cgbyqgopy1bcj" path="res://assets/animations/indigena.png" id="2_cxa1n"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5fv8m"]
+atlas = ExtResource("2_cxa1n")
+region = Rect2(0, 0, 300, 392)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l32p4"]
+atlas = ExtResource("2_cxa1n")
+region = Rect2(300, 0, 300, 392)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ju62s"]
+atlas = ExtResource("2_cxa1n")
+region = Rect2(600, 0, 300, 392)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7nopt"]
+atlas = ExtResource("2_cxa1n")
+region = Rect2(900, 0, 300, 392)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qbqef"]
+atlas = ExtResource("2_cxa1n")
+region = Rect2(1200, 0, 300, 392)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_064ag"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5fv8m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l32p4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ju62s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7nopt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qbqef")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g6dm4"]
+size = Vector2(622, 581)
+
+[node name="Node2D" type="Area2D"]
+script = ExtResource("1_xv1l6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_064ag")
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = -415.0
+offset_top = -312.0
+offset_right = 324.0
+offset_bottom = 275.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-60, -22.5)
+shape = SubResource("RectangleShape2D_g6dm4")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
