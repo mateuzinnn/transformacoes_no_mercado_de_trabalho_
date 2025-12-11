@@ -9,7 +9,7 @@
 [ext_resource type="Script" uid="uid://dajfltdqvddyw" path="res://cenas/mute_button_page2.gd" id="6_t8vlo"]
 [ext_resource type="Script" uid="uid://uj3fasfqqntw" path="res://cenas/back_button4.gd" id="7_f3t27"]
 [ext_resource type="AudioStream" uid="uid://ctmejtbm6ehbt" path="res://assets/audios/audio_page5.wav" id="8_taejf"]
-[ext_resource type="Script" uid="uid://c4i5nlvrpcjy7" path="res://cenas/interacao5.gd" id="10_raepd"]
+[ext_resource type="PackedScene" uid="uid://b608bunsu4d4x" path="res://assets/animations/dono_de_casa.tscn" id="11_ibkvh"]
 
 [node name="Page5" type="Node2D"]
 
@@ -140,15 +140,10 @@ theme_override_fonts/font = ExtResource("2_fcd0e")
 theme_override_font_sizes/font_size = 30
 text = "O TRABALHO DOMÉSTICO"
 
-[node name="TextureButton" type="TextureButton" parent="."]
-offset_left = -20.0
-offset_top = 388.0
-offset_right = 222.0
-offset_bottom = 878.0
-stretch_mode = 3
-script = ExtResource("10_raepd")
+[node name="DonoDeCasa" parent="." instance=ExtResource("11_ibkvh")]
+position = Vector2(385, 666)
+scale = Vector2(0.765, 0.765)
 
 [connection signal="pressed" from="NextButton" to="NextButton" method="_on_pressed"]
 [connection signal="pressed" from="SoundButton" to="SoundButton" method="_on_pressed"]
 [connection signal="pressed" from="BackButton" to="BackButton" method="_on_pressed"]
-[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]

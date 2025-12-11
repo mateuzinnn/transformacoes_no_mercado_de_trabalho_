@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2dcsqxape2n6"
-path="res://.godot/imported/page5-frame1.png-4f43290807686ce56e72b03f94940065.ctex"
+uid="uid://dh714qq4f4rsu"
+path="res://.godot/imported/donodecasa.png-1139cd6b7a00d4663da4d8d45992aadb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animations/page5-frame1.png"
-dest_files=["res://.godot/imported/page5-frame1.png-4f43290807686ce56e72b03f94940065.ctex"]
+source_file="res://assets/animations/donodecasa.png"
+dest_files=["res://.godot/imported/donodecasa.png-1139cd6b7a00d4663da4d8d45992aadb.ctex"]
 
 [params]
 

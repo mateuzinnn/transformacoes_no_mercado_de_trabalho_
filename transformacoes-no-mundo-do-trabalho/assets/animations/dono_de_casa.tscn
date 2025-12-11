@@ -1,0 +1,79 @@
+[gd_scene load_steps=11 format=3 uid="uid://b608bunsu4d4x"]
+
+[ext_resource type="Script" uid="uid://cl40es7t64rb0" path="res://assets/animations/dono_de_casa.gd" id="1_3uw47"]
+[ext_resource type="Texture2D" uid="uid://dh714qq4f4rsu" path="res://assets/animations/donodecasa.png" id="1_vn443"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3uw47"]
+atlas = ExtResource("1_vn443")
+region = Rect2(0, 0, 802, 556)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4a1em"]
+atlas = ExtResource("1_vn443")
+region = Rect2(802, 0, 802, 556)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nyxlb"]
+atlas = ExtResource("1_vn443")
+region = Rect2(1604, 0, 802, 556)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ankg0"]
+atlas = ExtResource("1_vn443")
+region = Rect2(2406, 0, 802, 556)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tm6vh"]
+atlas = ExtResource("1_vn443")
+region = Rect2(3208, 0, 802, 556)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gwmpr"]
+atlas = ExtResource("1_vn443")
+region = Rect2(4010, 0, 802, 556)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wytxm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3uw47")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4a1em")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nyxlb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ankg0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tm6vh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gwmpr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_68hh2"]
+size = Vector2(622, 581)
+
+[node name="DonoDeCasa" type="Area2D"]
+script = ExtResource("1_3uw47")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_wytxm")
+frame = 3
+frame_progress = 0.91875094
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-60, -22.5)
+shape = SubResource("RectangleShape2D_68hh2")
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = -415.0
+offset_top = -312.0
+offset_right = 324.0
+offset_bottom = 275.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

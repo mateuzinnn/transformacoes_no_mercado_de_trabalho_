@@ -58,7 +58,7 @@ primeiras formas de trabalho existente.  "
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = 165.0
 offset_top = 71.0
-offset_right = 651.0
+offset_right = 659.0
 offset_bottom = 142.0
 color = Color(0.19607843, 0.101960786, 0.9098039, 1)
 
