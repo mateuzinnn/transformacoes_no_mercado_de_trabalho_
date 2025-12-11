@@ -8,7 +8,7 @@
 [ext_resource type="Script" uid="uid://dajfltdqvddyw" path="res://cenas/mute_button_page2.gd" id="5_bva27"]
 [ext_resource type="StyleBox" uid="uid://2wem8hydwdrr" path="res://assets/buttons/back_button.tres" id="5_knqn6"]
 [ext_resource type="Script" uid="uid://bkm7qmoq6xnbs" path="res://cenas/next_button7.gd" id="6_0b51r"]
-[ext_resource type="AudioStream" uid="uid://6nstsce7mrlb" path="res://assets/audios/audio_page7.wav" id="6_mmtg0"]
+[ext_resource type="AudioStream" uid="uid://bkmbuonio30oa" path="res://assets/audios/audio_page7.wav" id="6_mmtg0"]
 [ext_resource type="Script" uid="uid://dc8xrpqd762y3" path="res://cenas/back_button6.gd" id="7_ohgv0"]
 [ext_resource type="Script" uid="uid://boqjq5c3sd7ue" path="res://cenas/video_stream_player.gd" id="9_knqn6"]
 [ext_resource type="VideoStream" uid="uid://b2e78laay0hwp" path="res://assets/videos/documentario-trabalho3.ogv" id="11_bva27"]
