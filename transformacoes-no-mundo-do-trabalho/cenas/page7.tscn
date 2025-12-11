@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bkbaw5lm2topp"]
+[gd_scene load_steps=14 format=3 uid="uid://bkbaw5lm2topp"]
 
 [ext_resource type="Script" uid="uid://domxu373mmhtp" path="res://cenas/page_7.gd" id="1_0b51r"]
 [ext_resource type="Texture2D" uid="uid://bvcg3h7c5mpy0" path="res://assets/Rectangle 17.png" id="1_rvvs7"]
@@ -12,23 +12,23 @@
 [ext_resource type="Script" uid="uid://dc8xrpqd762y3" path="res://cenas/back_button6.gd" id="7_ohgv0"]
 [ext_resource type="Script" uid="uid://boqjq5c3sd7ue" path="res://cenas/video_stream_player.gd" id="9_knqn6"]
 [ext_resource type="VideoStream" uid="uid://b2e78laay0hwp" path="res://assets/videos/documentario-trabalho3.ogv" id="11_bva27"]
+[ext_resource type="Texture2D" uid="uid://bxjkn83lct3oi" path="res://assets/images/thumb.png" id="13_mmtg0"]
 
 [node name="Page7" type="Node2D"]
 script = ExtResource("1_0b51r")
 metadata/_edit_horizontal_guides_ = [716.0]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 8.0
-offset_top = 20.0
-offset_right = 857.0
-offset_bottom = 1158.0
+offset_top = 24.0
+offset_right = 849.0
+offset_bottom = 1162.0
 texture = ExtResource("1_rvvs7")
 
 [node name="ColorRect6" type="ColorRect" parent="."]
-offset_left = 174.0
-offset_top = 78.0
-offset_right = 750.0
-offset_bottom = 199.0
+offset_left = 161.0
+offset_top = 73.0
+offset_right = 737.0
+offset_bottom = 194.0
 color = Color(0.19607843, 0.101960786, 0.9098039, 1)
 
 [node name="Label" type="Label" parent="ColorRect6"]
@@ -112,10 +112,10 @@ script = ExtResource("9_knqn6")
 
 [node name="ColorRect6" type="ColorRect" parent="VideoStreamPlayer"]
 layout_mode = 0
-offset_left = 190.0
-offset_top = -131.0
-offset_right = 719.0
-offset_bottom = 7.0
+offset_left = 185.0
+offset_top = -134.0
+offset_right = 714.0
+offset_bottom = -1.0
 color = Color(0.19607843, 0.101960786, 0.9098039, 1)
 
 [node name="Label" type="Label" parent="VideoStreamPlayer/ColorRect6"]
@@ -131,6 +131,14 @@ Primeiramente o responsável pela automação de uma companhia
 áerea falará sobre as automações em aeroportos e após, um 
 consultor de carreiras fala sobre a mudança com a chegada
 das automações. "
+
+[node name="Play" type="Button" parent="."]
+offset_left = 2.0
+offset_top = 373.0
+offset_right = 852.0
+offset_bottom = 889.0
+scale = Vector2(1.11, 1)
+icon = ExtResource("13_mmtg0")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(430, 593)
@@ -156,3 +164,4 @@ text = "O FUTURO DO TRABALHO"
 [connection signal="pressed" from="SoundButton" to="SoundButton" method="_on_pressed"]
 [connection signal="pressed" from="NextButton" to="NextButton" method="_on_pressed"]
 [connection signal="pressed" from="BackButton" to="BackButton" method="_on_pressed"]
+[connection signal="pressed" from="Play" to="VideoStreamPlayer" method="_on_play_pressed"]

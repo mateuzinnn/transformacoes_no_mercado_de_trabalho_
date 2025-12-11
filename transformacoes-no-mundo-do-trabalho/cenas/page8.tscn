@@ -7,7 +7,7 @@
 [ext_resource type="StyleBox" uid="uid://de3mti8838fxf" path="res://assets/buttons/sound_button.tres" id="5_dra3b"]
 [ext_resource type="Script" uid="uid://dajfltdqvddyw" path="res://cenas/mute_button_page2.gd" id="6_pm3fx"]
 [ext_resource type="StyleBox" uid="uid://2wem8hydwdrr" path="res://assets/buttons/back_button.tres" id="7_3swlr"]
-[ext_resource type="AudioStream" uid="uid://ixkogwkw5t7a" path="res://assets/audios/audio_page8.wav" id="7_5t6h0"]
+[ext_resource type="AudioStream" uid="uid://be8g2dqw0heod" path="res://assets/audios/audio_page8.wav" id="7_5t6h0"]
 [ext_resource type="Script" uid="uid://vgm1lk73s8jo" path="res://back_button8.gd" id="9_3swlr"]
 [ext_resource type="Texture2D" uid="uid://dq22vl22pynq2" path="res://assets/images/bolinha.png" id="10_pm3fx"]
 [ext_resource type="Script" uid="uid://bg5014d4m3rpk" path="res://bolinha.gd" id="11_3swlr"]
